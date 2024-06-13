@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>TEST KAFKA</title>
+  </head>
+  <body>
+	<form hx-post="/sendMail" hx-trigger="submit" hx-target="#msg" hx-swap="innerHTML" class="w-50 mx-auto mt-5 p-5 border rounded">
+	  <p class="h2 text-center mb-3">輸入mail測試kafka是否正常運作。</p>
+	  <div class="mb-3">
+	    <label for="inputEmail" class="form-label">Email</label>
+	    <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp" required>
+	  </div>
+	  <div class="mb-3">
+	    <label for="inputName" class="form-label">姓名</label>
+	    <input type="text" class="form-control" id="inputName" name="name" required>
+	  </div>
+	  <button type="submit" class="btn btn-primary mb-3">送出</button>
+	  <p id="msg" class="h4 text-success text-center mb-3"></p>
+	</form>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  	<script src="https://unpkg.com/htmx.org@1.9.12"></script>
+  </body>
+</html>
