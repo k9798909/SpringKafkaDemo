@@ -33,20 +33,20 @@ Apache Kafka 是一個分佈式流式處理平台，旨在建立高度可擴展�
 3. Kafka 消費者，已生產者傳遞的消息編號(key)取得須處理的資料。
 
 # 專案使用技術
-Spring Boot: 用於構建生產者和消費者。
-Apache Kafka: 作為消息隊列系統，負責消息的傳遞和分發。
-Redis: 作為臨時數據存儲，存儲消息的實際內容。
-Spring Data Redis: 用於儲存訊息佇列所傳遞的資料。
-Jackson: 用於 JSON 序列化和反序列化，方便數據處理。
-Maven: 作為項目構建和依賴管理工具，並且使用maven modure管理相同的程式。
-PostgreSQL: 儲存已寄發信件的資訊。
-Thymeleaf: Web 頁面。
+- **Spring Boot: 用於構建生產者和消費者。
+- **Apache Kafka: 作為消息隊列系統，負責消息的傳遞和分發。
+- **Redis: 作為臨時數據存儲，存儲消息的實際內容。
+- **Spring Data Redis: 用於儲存訊息佇列所傳遞的資料。
+- **Jackson: 用於 JSON 序列化和反序列化，方便數據處理。
+- **Maven: 作為項目構建和依賴管理工具，並且使用maven modure管理相同的程式。
+- **PostgreSQL: 儲存已寄發信件的資訊。
+- **Thymeleaf: Web 頁面。
 
 # 啟動專案及測試
-1.需先將專案內的.propertys的mail參數設置上去。
-2.啟動docker-compose內有kafka、postgreSQL、redis。
-3.啟動consumer及producer專案，而service會被這兩個傳案使用。
-4.開啟http://localhost:8082/，開始測試。
+- **1.需先將專案內的.propertys的mail參數設置上去。
+- **2.啟動docker-compose內有kafka、postgreSQL、redis。
+- **3.啟動consumer及producer專案，而service會被這兩個傳案使用。
+- **4.開啟http://localhost:8082/
 
 
 
