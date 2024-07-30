@@ -1,5 +1,5 @@
 # SpringKafkaDemo
-簡單的 SpringKafka 專案
+簡單的 SpringKafka 專案，會透過kafka Consumer寄出信件。
 
 # Apache Kafka 簡介
 
