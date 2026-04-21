@@ -16,7 +16,8 @@ public class TopicConfig {
                 TopicBuilder.name(SEND_MAIL_TOPIC)
                         .partitions(10)
                         .replicas(1)
-                        .build());
+                        .build()
+        );
     }
 
 }
